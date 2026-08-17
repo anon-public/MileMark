@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "MileMark",
+    "slug": "MileMark",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "newArchEnabled": true,
+    "icon": "./assets/icons/Group1.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/icons/Group1.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FDF5E6"
+    },
+    "plugins": [
+      "expo-sqlite",
+      [
+        "expo-notifications",
+        {
+          "color": "#E18B43",
+          "sounds": []
+        }
+      ]
+    ],
+    "web": {
+      "bundler": "metro",
+      "favicon": "./assets/icons/Group1.png"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.allsignin.MileMark",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "RECEIVE_BOOT_COMPLETED"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icons/Group1.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.allsignin.MileMark"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "cbfe432e-c37c-4d84-bc33-bad8378db384"
+      }
+    }
+  }
+}
